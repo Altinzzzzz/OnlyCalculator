@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="calcStyle.css">
+    <script src = "calcLogic.js" defer></script>
+</head>
+
+<body style = "overflow-x: hidden;">
+    <div class = "main">
+        <button data-key = "" class = "btn clear" style = "grid-area: clear"> AC </button>
+        <button data-key = "48" class = "btn numbers" id = "zero" style = "grid-area: zero">0</button>
+        <button data-key = "49" class = "btn numbers" style = "grid-area: one">1</button>
+        <button data-key = "50" class = "btn numbers" style = "grid-area: two">2</button>
+        <button data-key = "51" class = "btn numbers" style = "grid-area: three">3</button>
+        <button data-key = "52" class = "btn numbers" style = "grid-area: four">4</button>
+        <button data-key = "53" class = "btn numbers" style = "grid-area: five">5</button>
+        <button data-key = "54" class = "btn numbers" style = "grid-area: six">6</button>
+        <button data-key = "55" class = "btn numbers" style = "grid-area: seven">7</button>
+        <button data-key = "56" class = "btn numbers" style = "grid-area: eight">8</button>
+        <button data-key = "57" class = "btn numbers" style = "grid-area: nine">9</button>
+        <button data-key = "190" class = "btn point" style = "grid-area: point">.</button>
+        <button data-key = "8" class = "btn backspace" style = "grid-area: backspace">-</button>
+        <button data-key = "187" class = "btn operators" style = "grid-area: add">+</button>
+        <button data-key = "189" class = "btn operators" style = "grid-area: substract">-</button>
+        <button class = "btn operators" style = "grid-area: multiply">x</button>
+        <button data-key = "191" class = "btn operators" style = "grid-area: divide">/</button>
+        <button data-key = "13" class = "btn operators" style = "grid-area: equals">=</button>
+        <button class = "btn operators" style = "grid-area: power">x<sup>y</sup></button>
+        <button class = "btn operators" style = "grid-area: root">&#8730;</button>
+        <button class = "btn operators" style = "grid-area: modulo">%</button>
+        <button class = "btn special" style = "grid-area: abs">ABS</button>
+        <button class = "btn special" style = "grid-area: powerOf2">x<sup>2</sup></button>
+        <button class = "btn special" style = "grid-area: divideX">1/x</button>
+        <button class = "btn special" style = "grid-area: rootOf2"><sup>2</sup>&#8730;</button>
+    </div>
+    <div id = "fieldDiv">
+        <p class = "field"></p>
+    </div>
+</body>
+
+</html>

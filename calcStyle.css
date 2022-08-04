@@ -1,0 +1,84 @@
+::before, ::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000000;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.main{
+    margin-top: 100px;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'clear abs divideX powerOf2 rootOf2 backspace'
+    'clear seven eight nine multiply divide'
+    'power four five six add substract'
+    'root one two three add equals'
+    'modulo zero zero point add equals';
+}
+
+.main > button{
+    border: 2px solid blue;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+    color: #be9625;
+    cursor: pointer;
+}
+
+button:not(.numbers):hover{
+    color: #fcbd11;
+}
+
+button:hover{
+    border: 2px solid #ff3e1e;
+    transition: 0.8s;
+}
+
+button:focus{
+    border: 3px solid #ff3e1e;
+}
+
+#fieldDiv{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 50px;
+    padding: 10px;
+    width: 50%;
+
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid blue;
+    /* border: 2px solid #46a560; */
+    color: #ff3e1e;
+
+    cursor: pointer;
+    align-self: flex-start;
+    text-align: end;
+}
+
+.field{
+    margin-top: 10px;
+}
+
+#fieldDiv:hover{
+    border: 3px solid #ff3e1e;
+    color: #fcbd11;;
+    transition: 0.7s;
+}
+
+button{
+    transition: all 0.7s;
+}
